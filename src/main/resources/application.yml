@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mongodb-test
+  data:
+    mongodb:
+      host: ${MONGO_HOST:localhost}
+      port: ${MONGO_PORT:27017}
+      database: ${MONGO_DATABASE:people_db}
+      username: ${MONGO_USERNAME:admin}
+      password: ${MONGO_PASSWORD:admin123}
+      authentication-database: ${MONGO_AUTHENTICATION_DATABASE:admin}
+
+server:
+  port: ${SERVER_PORT:8080}
