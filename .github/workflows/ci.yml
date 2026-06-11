@@ -29,3 +29,5 @@ jobs:
       - name: Package
         run: mvn package
 
+      - name: Build Docker image
+        run: docker build -t mongodb-test:ci .
