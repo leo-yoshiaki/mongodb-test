@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -25,3 +25,7 @@ jobs:
 
       - name: Run tests
         run: mvn test
+
+      - name: Package
+        run: mvn package
+
